@@ -28,6 +28,7 @@
             <ListBox x:Name="myListView"  Margin="0,81,-15,10"  IsSynchronizedWithCurrentItem="False" Loaded="myListView_Loaded">
 
 
+                <object Source="imageUri"/>
 
                 <StackPanel>
                     <Border Grid.Row="2" BorderThickness="8" CornerRadius="16" Background="#FF777799" Width="455">
