@@ -58,10 +58,8 @@ namespace iStudents_ABC
                     OnMessageReceived(firstFromGroup.description);
                     txtDisplayText = null;
                 }
-                catch { }
-                finally { 
-             
-                }   
+                catch {}
+              
             }
             catch (MobileServiceInvalidOperationException ex)
             {
