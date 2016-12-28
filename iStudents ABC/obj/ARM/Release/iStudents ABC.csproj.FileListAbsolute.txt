@@ -1,0 +1,38 @@
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Assets\ApplicationIcon.png
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Assets\Tiles\IconicTileSmall.png
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\iStudents ABC.dll
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\iStudents ABC.pdb
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\AppManifest.xaml
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Properties\WMAppManifest.xml
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\iStudents_ABC_Release_ARM.xap
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Microsoft.WindowsAzure.Mobile.dll
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Microsoft.WindowsAzure.Mobile.Ext.dll
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Microsoft.WindowsAzure.Mobile.UI.dll
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Newtonsoft.Json.dll
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\System.Net.Http.dll
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\System.Net.Http.Extensions.dll
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\System.Net.Http.Primitives.dll
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Microsoft.WindowsAzure.Mobile.xml
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Microsoft.WindowsAzure.Mobile.Ext.xml
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Microsoft.WindowsAzure.Mobile.UI.xml
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\Newtonsoft.Json.xml
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\System.Net.Http.xml
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\System.Net.Http.Extensions.xml
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\Bin\ARM\Release\System.Net.Http.Primitives.xml
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\App.g.cs
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\DashBoardPage.g.cs
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\MainPage.g.cs
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\MyPostPage.g.cs
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\RegistrationPage.g.cs
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\iStudents ABC.g.resources
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\iStudents_ABC.Resources.AppResources.resources
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\iStudents ABC.csproj.GenerateResource.Cache
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\iStudents ABC.dll
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\iStudents ABC.pdb
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\XapCacheFile.xml
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\iStudents ABC.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2012\Projects\iStudents ABC\iStudents ABC\obj\ARM\Release\NewPostPage.g.cs

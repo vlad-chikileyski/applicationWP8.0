@@ -1,0 +1,84 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="iStudents_ABC.DashBoardPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Canvas x:Name="canvas" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Height="800" Background="Black" ManipulationStarted="canvas_ManipulationStarted" ManipulationDelta="canvas_ManipulationDelta" ManipulationCompleted="canvas_ManipulationCompleted">
+        <Canvas.Resources>
+            <Storyboard x:Name="moveAnimation">
+                <DoubleAnimation Duration="0:0:0.2" To="0" Storyboard.TargetProperty="(Canvas.Left)" Storyboard.TargetName="LayoutRoot" d:IsOptimized="True" />
+            </Storyboard>
+        </Canvas.Resources>
+
+        <Canvas  CacheMode="BitmapCache" x:Name="LayoutRoot" Width="709"  VerticalAlignment="Stretch" Background="#FF39515D" Canvas.Left="-229" Height="790">
+            <Grid x:Name="grdCommands" CacheMode="BitmapCache" Grid.Column="1" Background="White" Height="780" Width="485" Canvas.Left="229" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="76"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FF3B5998" Margin="0,0,0,680" Grid.RowSpan="2">
+                    <Button  Click="OpenCloseMenuLeft" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Height="95" BorderBrush="Transparent">
+                        <Image Height="54" Source="Assets/list.png" Stretch="Fill" Width="54"/>
+                    </Button>
+                    <Button x:Name="btnAddNewPost" Canvas.Left="273" Click="btnAddNewPost_Click" Margin="370,0,0,10" BorderBrush="Transparent">
+                        <Image Height="46" Source="Assets/add.png" Stretch="Fill" Width="46"/>
+                    </Button>
+
+                </Grid>
+
+                <Border Background="White" Margin="0,10,0,48" Grid.Row="1"/>
+                <!--<Button Content="btnAdd" HorizontalAlignment="Left" Margin="-196,10,0,0" VerticalAlignment="Top" Click="Button_Click"/> -->
+                <ListBox x:Name="myListView"  Margin="10" ItemsSource="{Binding}" Grid.Row="1" Loaded="myListView_Loaded" SelectionChanged="myListView_SelectionChanged" IsSynchronizedWithCurrentItem="False">
+                    <ListBox.ItemTemplate>
+
+                        <DataTemplate>
+
+                            <StackPanel>
+                                <Border Grid.Row="3" BorderThickness="8" CornerRadius="16" Background="#FF777799" Width="455">
+
+                                    <Grid Margin="20, 20, 0, 20">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Column="0" Grid.Row="0" Text="{Binding Path=id}"  Foreground="White" Margin="0,0,10,0"/>
+                                        <TextBlock Grid.Column="1" Grid.Row="0" Text="{Binding Path=status}"  Foreground="White" Margin="70,0,10,0" FlowDirection="RightToLeft"/>
+                                        <TextBlock Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding Path=title}"   Foreground="White"/>
+
+                                    </Grid>
+                                </Border>
+
+                            </StackPanel>
+
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+
+            </Grid>
+            <Button x:Name="MenuBtnNewPost" Content="New post" Canvas.Top="28" Width="242" BorderBrush="#FF5B738B" BorderThickness="0,0,0,1" Canvas.Left="-18" FontSize="32.667" FontFamily="Portable User Interface" HorizontalContentAlignment="Left" Padding="30,5,10,6" Click="MenuBtnNewPost_Click"/>
+            <Button x:Name="MenuBtnDashboard" Content="Dashboard" Canvas.Top="110" Width="242" BorderBrush="#FF5B738B" BorderThickness="0,0,0,1" Canvas.Left="-18" FontSize="32.667" FontFamily="Portable User Interface" HorizontalContentAlignment="Left" Padding="30,5,10,6" Click="MenuBtnDashboard_Click"/>
+            <Button x:Name="MenuBtnReg" Content="Register" Canvas.Top="192" Width="242" BorderBrush="#FF5B738B" BorderThickness="0,0,0,1" Canvas.Left="-18" FontSize="32.667" FontFamily="Portable User Interface" HorizontalContentAlignment="Left" Padding="30,5,10,6" Click="MenuBtnReg_Click"/>
+            <Button x:Name="MenuBtnLog" Content="Login" Canvas.Top="273" Width="242" BorderBrush="#FF5B738B" BorderThickness="0,0,0,1" Canvas.Left="-18" FontSize="32.667" FontFamily="Portable User Interface" HorizontalContentAlignment="Left" Padding="30,5,10,6" Click="MenuBtnLog_Click"/>
+            <Image Height="128" Canvas.Left="45" Source="Assets/scoop-it.png" Stretch="Fill" Canvas.Top="634" Width="128"/>
+        </Canvas>
+
+
+    </Canvas>
+
+</phone:PhoneApplicationPage>

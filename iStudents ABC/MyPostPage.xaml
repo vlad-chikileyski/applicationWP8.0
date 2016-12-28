@@ -1,0 +1,104 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="iStudents_ABC.MyPostPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28"/>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ListBox x:Name="myListView"  Margin="0,81,-15,10"  IsSynchronizedWithCurrentItem="False" Loaded="myListView_Loaded">
+
+
+
+                <StackPanel>
+                    <Border Grid.Row="2" BorderThickness="8" CornerRadius="16" Background="#FF777799" Width="455">
+
+                        <Grid Margin="20, 20, 20, 20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+
+                            <TextBlock x:Name="txtValid_id" Grid.Column="0" Grid.Row="0" Text=""  Foreground="White" Margin="0,0,10,0"/>
+                            <TextBlock x:Name="txtxValid_status" Grid.Column="1" Grid.Row="0" Text=""  Foreground="White" Margin="70,0,10,0" FlowDirection="RightToLeft"/>
+                            <TextBlock x:Name="txtValid_title" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Text="" Foreground="White"/>
+
+
+                        </Grid>
+
+                    </Border>
+                    <Border Grid.Row="1" BorderThickness="8" CornerRadius="16" Background="#FF777799" Width="455">
+
+                        <Grid Margin="20, 20, 20, 20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+
+                            <TextBlock TextWrapping="Wrap" Text="Description" Foreground="White" Margin="0,-27,99,364" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                            <!-- Это для вывода данных НАЧАЛО!-->
+                            <RichTextBox x:Name="txtDisplayText" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="3.348,8.938" Margin="3,0,0,10" Width="396" Height="344" Grid.ColumnSpan="2">
+
+                            </RichTextBox >
+                            <!-- Это для вывода данных КОНЕЦ!-->
+
+                        </Grid>
+
+                    </Border>
+
+                </StackPanel>
+
+
+
+
+            </ListBox>
+            <Rectangle Fill="#FF5281B9" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="489" Stroke="#99455461" Margin="-18,-24,-15,0"/>
+
+            <Button x:Name="btnPrevPage" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="71" Width="97" RenderTransformOrigin="0.5,0.5" BorderBrush="Transparent" Foreground="Transparent" Click="btnPrevPage_Click" Margin="0,-11,0,0">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Assets/arrow-pointing-to-right.png"/>
+                </Button.Background>
+            </Button>
+            <TextBlock x:Name="txtNumPost" HorizontalAlignment="Left" Margin="130,-11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="247" FontSize="45">
+        	<Run Text=""/>
+        	<LineBreak/>
+        	<Run/>
+            </TextBlock>
+
+
+
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

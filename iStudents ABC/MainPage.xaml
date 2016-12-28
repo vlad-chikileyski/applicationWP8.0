@@ -1,0 +1,77 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="iStudents_ABC.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="#FF5281B9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- LOCALIZATION NOTE:
+            To localize the displayed strings copy their values to appropriately named
+            keys in the app's neutral language resource file (AppResources.resx) then
+            replace the hard-coded text value between the attributes' quotation marks
+            with the binding clause whose path points to that string name.
+
+            For example:
+
+                Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}"
+
+            This binding points to the template's string resource named "ApplicationTitle".
+
+            Adding supported languages in the Project Properties tab will create a
+            new resx file per language that can carry the translated values of your
+            UI strings. The binding in these examples will cause the value of the
+            attributes to be drawn from the .resx file that matches the
+            CurrentUICulture of the app at run time.
+         -->
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <!--  <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+       -->
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBox x:Name="txtLogin" HorizontalAlignment="Center" InputScope="TelephoneNumber" Height="76" Margin="28,224,27,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="401" Text="Your phone number"  FontFamily="Segoe WP SemiLight" BorderThickness="0,0,0,3" Foreground="#FFA1C6D9" BorderBrush="White" GotFocus="txtLogin_GotFocus" LostFocus="txtLogin_LostFocus" SelectionForeground="Transparent">
+                <TextBox.Background>
+                    <SolidColorBrush Color="Transparent"/>
+                </TextBox.Background>
+            </TextBox>
+            <Button Content="Login" HorizontalAlignment="Center" Margin="28,388,27,0" VerticalAlignment="Top" Height="85" Width="401" Click="btnIndexManifest" BorderThickness="0,0,0,2" Foreground="White" BorderBrush="#99455461" Background="#FF6796CC" RenderTransformOrigin="0,0"/>
+            <HyperlinkButton Content="Registration" NavigateUri="/RegistrationPage.xaml" HorizontalAlignment="Left" Margin="142,633,0,0" VerticalAlignment="Top" FontSize="30" FontFamily="Segoe WP SemiLight" RenderTransformOrigin="0.551,1.75"/>
+            <Image Margin="119,10,137,513" Source="Assets/logo_login.png" Stretch="Fill"/>
+            <PasswordBox x:Name="pswBox" HorizontalAlignment="Left"  Margin="28,312,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.392,0.083" Width="401" BorderThickness="0,0,0,3" Background="Transparent" Height="76" GotFocus="pswBox_GotFocus" LostFocus="pswBox_LostFocus" Foreground="Black" SelectionForeground="Transparent" BorderBrush="White"/>
+            <TextBlock x:Name="labelPSW" HorizontalAlignment="Left" Margin="46,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe WP SemiLight" FontSize="25.333" Foreground="#FFA1C6D9" RenderTransformOrigin="0.218,0.299">
+            	<Run Text="Password"/>
+            	<LineBreak/>
+            	<Run/>
+            </TextBlock>
+
+        </Grid>
+
+        <!--Uncomment to see an alignment grid to help ensure your controls are
+            aligned on common boundaries.  The image has a top margin of -32px to
+            account for the System Tray. Set this to 0 (or remove the margin altogether)
+            if the System Tray is hidden.
+
+            Before shipping remove this XAML and the image itself.-->
+        <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
+    </Grid>
+
+</phone:PhoneApplicationPage>

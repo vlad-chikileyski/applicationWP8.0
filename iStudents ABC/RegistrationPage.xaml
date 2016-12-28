@@ -1,0 +1,82 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="iStudents_ABC.RegistrationPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White" Height="768" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="768"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="1" Margin="12,1,0,751"/>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="12,20,12,0" Grid.Row="1"/>
+        <StackPanel x:Name="TitlePanel" Grid.Row="1" Margin="12,1,0,751">
+            <!--  <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+       -->
+        </StackPanel>
+        <Grid x:Name="ContentPanel_Copy" Margin="12,20,12,244" Grid.Row="1">
+            <TextBox x:Name="txtBMobileValid"  HorizontalAlignment="Center" Height="72" Margin="44,180,20,0" TextWrapping="Wrap" InputScope="TelephoneNumber" Text="Twoj numer" VerticalAlignment="Top" Width="392" SelectionForeground="#00000000" SelectionBackground="White" Background="#00000000" Foreground="#FFABACB6" BorderThickness="0,0,0,3" BorderBrush="#FF5281B9" GotFocus="txtBMobileValid_GotFocus" LostFocus="txtBMobileValid_LostFocus"/>
+            <TextBox x:Name="txtBPasswordValid" HorizontalAlignment="Left" Height="72" Margin="44,299,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="392" BorderThickness="0,0,0,3" BorderBrush="#FF5281B9" Foreground="#FFABACB6" GotFocus="txtBPasswordValid_GotFocus" LostFocus="txtBPasswordValid_LostFocus"/>
+
+        </Grid>
+        <Rectangle Fill="#FF5281B9" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="480" Stroke="#99455461" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="130,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="83" Width="247" FontSize="45" Grid.Row="1">
+        	<Run Text="Registration"/>
+        	<LineBreak/>
+        	<Run/>
+        </TextBlock>
+        <Rectangle Fill="#FFEEEFF1" HorizontalAlignment="Left" Height="376" Margin="-44,426,-36,-34" Stroke="#99455461" VerticalAlignment="Top" Width="560" Grid.RowSpan="2"/>
+        <Button Click="btnRegValidate" Content="Done!" HorizontalAlignment="Center" Margin="44,562,35,0" VerticalAlignment="Top" Height="85" Width="401" Background="#FF5281B9" BorderBrush="#99000000" BorderThickness="0,0,0,3" FontSize="26" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,465,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Width="424" Grid.RowSpan="2" Foreground="#FF594F4F">
+        	<Run Text="I have read and agreed with "/>
+        	<Run Text="Terms of Use ">
+        		<Run.Foreground>
+        			<SolidColorBrush Color="#FF004CF0">
+        				<SolidColorBrush.RelativeTransform>
+        					<MatrixTransform Matrix="Identity"/>
+        				</SolidColorBrush.RelativeTransform>
+        				<SolidColorBrush.Transform>
+        					<MatrixTransform Matrix="Identity"/>
+        				</SolidColorBrush.Transform>
+        			</SolidColorBrush>
+        		</Run.Foreground>
+        	</Run>
+        	<Run Text="and "/>
+        	<Run Text="Privacy Policy">
+        		<Run.Foreground>
+        			<SolidColorBrush Color="#FF004CF0">
+        				<SolidColorBrush.RelativeTransform>
+        					<MatrixTransform Matrix="Identity"/>
+        				</SolidColorBrush.RelativeTransform>
+        				<SolidColorBrush.Transform>
+        					<MatrixTransform Matrix="Identity"/>
+        				</SolidColorBrush.Transform>
+        			</SolidColorBrush>
+        		</Run.Foreground>
+        	</Run>
+        	<Run Text=". "/>
+        </TextBlock>
+        <Button x:Name="btnPrevPage" Content="" HorizontalAlignment="Left" Margin="0,14,0,0" VerticalAlignment="Top" Height="71" Width="97" RenderTransformOrigin="0.5,0.5" BorderBrush="Transparent" Foreground="Transparent" Grid.RowSpan="2" Click="btnPrevPage_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/arrow-pointing-to-right.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+
+</phone:PhoneApplicationPage>
