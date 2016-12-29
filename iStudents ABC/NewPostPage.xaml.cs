@@ -26,9 +26,6 @@ namespace iStudents_ABC
             {
                 BitmapImage bmp = new BitmapImage();
                 bmp.SetSource(e.ChosenPhoto);
-                MessageBox.Show("Этот");
-
-
                 imageMakePhotoGALERIA.Source = bmp;
                 btnGallery.IsEnabled = false;
                 btnMakePhoto.IsEnabled = false;
